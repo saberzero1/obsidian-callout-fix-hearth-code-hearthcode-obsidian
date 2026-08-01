@@ -91,19 +91,19 @@ settings:
   --callout-bug: 224, 108, 94;
   --callout-content-background: transparent;
   --callout-content-padding: 0.48em 0 0;
-  --callout-default: 104, 173, 193;
-  --callout-error: 224, 108, 94;
-  --callout-example: 140, 161, 199;
+  --callout-default: rgb(104, 173, 193);
+  --callout-error: rgb(224, 108, 94);
+  --callout-example: rgb(140, 161, 199);
   --callout-fail: 224, 108, 94;
-  --callout-info: 104, 173, 193;
+  --callout-info: rgb(104, 173, 193);
   --callout-padding: 0.72em 0.9em;
-  --callout-question: 213, 156, 96;
-  --callout-quote: 114, 104, 91;
+  --callout-question: rgb(213, 156, 96);
+  --callout-quote: rgb(114, 104, 91);
   --callout-radius: 8px;
-  --callout-success: 145, 207, 114;
+  --callout-success: rgb(145, 207, 114);
   --callout-tip: 145, 207, 114;
-  --callout-todo: 126, 177, 171;
-  --callout-warning: 210, 171, 97;
+  --callout-todo: rgb(126, 177, 171);
+  --callout-warning: rgb(210, 171, 97);
   --checkbox-border-color: rgb(133 139 110 / 0.68);
   --checkbox-border-color-hover: rgb(135 152 125 / 0.86);
   --checkbox-color: #89c26c;
@@ -640,20 +640,20 @@ settings:
   accent-color: var(--hearth-task-deferred);
 }
 .theme-dark .callout {
-  border: var(--callout-border-width) solid rgba(var(--callout-color), var(--hearth-callout-border-opacity));
+  border: var(--callout-border-width) solid color-mix(in srgb, var(--callout-color) calc(var(--hearth-callout-border-opacity) * 100%), transparent);
   border-inline-start-width: 4px;
   border-radius: var(--callout-radius);
-  background-color: rgba(var(--callout-color), var(--hearth-callout-bg-opacity));
+  background-color: color-mix(in srgb, var(--callout-color) calc(var(--hearth-callout-bg-opacity) * 100%), transparent);
   box-shadow: inset 0 0 0 1px var(--hearth-md-border-soft);
   padding: var(--callout-padding);
 }
 
 .theme-dark .callout .callout-title {
-  color: rgb(var(--callout-color));
+  color: var(--callout-color);
 }
 
 .theme-dark .callout .callout-icon .svg-icon {
-  color: rgb(var(--callout-color));
+  color: var(--callout-color);
 }
 
 .theme-dark .callout .callout-content {
@@ -776,19 +776,19 @@ settings:
   --callout-bug: 186, 81, 70;
   --callout-content-background: transparent;
   --callout-content-padding: 0.48em 0 0;
-  --callout-default: 35, 114, 150;
-  --callout-error: 186, 81, 70;
-  --callout-example: 58, 102, 155;
+  --callout-default: rgb(35, 114, 150);
+  --callout-error: rgb(186, 81, 70);
+  --callout-example: rgb(58, 102, 155);
   --callout-fail: 186, 81, 70;
-  --callout-info: 35, 114, 150;
+  --callout-info: rgb(35, 114, 150);
   --callout-padding: 0.72em 0.9em;
-  --callout-question: 164, 105, 44;
-  --callout-quote: 142, 134, 123;
+  --callout-question: rgb(164, 105, 44);
+  --callout-quote: rgb(142, 134, 123);
   --callout-radius: 8px;
-  --callout-success: 57, 118, 37;
+  --callout-success: rgb(57, 118, 37);
   --callout-tip: 57, 118, 37;
-  --callout-todo: 59, 109, 111;
-  --callout-warning: 157, 113, 36;
+  --callout-todo: rgb(59, 109, 111);
+  --callout-warning: rgb(157, 113, 36);
   --checkbox-border-color: rgb(109 116 92 / 0.68);
   --checkbox-border-color-hover: rgb(97 113 91 / 0.86);
   --checkbox-color: #457d31;
@@ -1325,20 +1325,20 @@ settings:
   accent-color: var(--hearth-task-deferred);
 }
 .theme-light .callout {
-  border: var(--callout-border-width) solid rgba(var(--callout-color), var(--hearth-callout-border-opacity));
+  border: var(--callout-border-width) solid color-mix(in srgb, var(--callout-color) calc(var(--hearth-callout-border-opacity) * 100%), transparent);
   border-inline-start-width: 4px;
   border-radius: var(--callout-radius);
-  background-color: rgba(var(--callout-color), var(--hearth-callout-bg-opacity));
+  background-color: color-mix(in srgb, var(--callout-color) calc(var(--hearth-callout-bg-opacity) * 100%), transparent);
   box-shadow: inset 0 0 0 1px var(--hearth-md-border-soft);
   padding: var(--callout-padding);
 }
 
 .theme-light .callout .callout-title {
-  color: rgb(var(--callout-color));
+  color: var(--callout-color);
 }
 
 .theme-light .callout .callout-icon .svg-icon {
-  color: rgb(var(--callout-color));
+  color: var(--callout-color);
 }
 
 .theme-light .callout .callout-content {
